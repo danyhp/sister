@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mahasiswa Dany JSON</title>
+</head>
+<body>
+
+<p>Praktikum JSON, menampilkan isi JSON array</p>
+
+<p id="display"></p>
+
+<script>
+
+    var mahasiswa, x, i, j;
+    x = "";
+    mahasiswa = [
+        {"name": "Dany Hasiando Panggabean", "nim": 1315016, "concentration": "Media & Internet Technology"},
+        {"name": "Dimas Sheldon", "nim": 1415002, "concentration": "Mobile Technology"},
+        {"name": "Rosa Gaghana", "nim": 1315009, "concentration": "Media & Internet Technology"}
+    ];
+
+    for (i in mahasiswa) {
+        x += "<h2>" + mahasiswa[i].name + "</h2>";
+        x += mahasiswa[i].nim + "<br>";
+        x += mahasiswa[i].concentration + "<br>";
+    }
+
+    document.getElementById("display").innerHTML = x;
+
+</script>
+
+
+</body>
+</html>

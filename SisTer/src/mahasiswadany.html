@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mahasiswa Dany JSON</title>
+</head>
+<body>
+
+<p>Praktikum JSON, menampilkan isi JSON array</p>
+
+<p id="display"></p>
+
+<script>
+
+    var mahasiswa, x;
+    mahasiswa = {
+        "name": "Dany Hasiando Panggabean",
+        "nim": 1315016,
+        "concentration": "Media & Internet Technology",
+        "address": "Pondok Cipta Mas C3 No. 2, Cimahi",
+        "age": 22
+    };
+
+    x = mahasiswa.name + "<br>" +  mahasiswa.nim + "<br>" + mahasiswa.concentration;
+    document.getElementById("display").innerHTML = x;
+
+</script>
+
+
+</body>
+</html>
